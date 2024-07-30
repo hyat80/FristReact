@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    font-weight: 900;
+    padding-bottom: 2px;
+    color: #7ad2d2;
+    border-radius: 30%;
+}
+.line{
+    @apply relative inline-block
+}
+
+.line::after {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    left: 100%;
+    width: 500%;
+    height: 5px;
+    background-color: #f7f8f9;
+   text-align: center;
+} 
+.line-1{
+    @apply relative inline-block
+}
+
+.line-1::after {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    left: -900%;
+    width: 500%;
+    height: 5px;
+    background-color: #f7f8f9;
+   text-align: center;
+} 
+
+
+
+
+.line3{
+    @apply relative inline-block
+}
+
+.line3::after {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    left: 100%;
+    width: 500%;
+    height: 5px;
+    background-color: #0a0a0a;
+   text-align: center;
+} 
+.line-2{
+    @apply relative inline-block
+}
+
+.line-2::after {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    left: -900%;
+    width: 500%;
+    height: 5px;
+    background-color: #0d0d0d;
+   text-align: center;
+}
+.video{
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 0px 2px #edeeef;
+    margin-left: 20px;
+}
+.circle{
+    border-radius: 50% 
+}
+.inner{
+    width: 96%;
+    height: 100%;
+    background-color: #a6ece1ca;
+    top: 100%;
+    transition: .5s;
+    
+  }
+  
+.meal:hover .inner{
+    top: 0;
+  }
